@@ -1,0 +1,36 @@
+{
+  "Settings": {
+    "EnableRazorViews": false,
+    "ExcludePortNetStandard": false,
+    "EnableDbMod": true
+  },
+  "DatabaseSettings": {
+    "ConnecterId": "fcde8586-9a88-4d98-9a6e-1da630e162f9",
+    "Databases": [
+      {
+        "Source": {
+          "DatabaseName": "DPS",
+          "DatabaseVersion": 2019
+        },
+        "Target": {
+          "DatabaseName": "postgres",
+          "DatabaseVersion": 13
+        },
+        "Tools": [
+          {
+            "Name": "DMS",
+            "Properties": {
+              "DmsArn": "arn:aws:dms:us-east-1:189535794466:migration-project:AJFEZ5GCW5GFVPCX7OSRG5KILY"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "projects": [
+    {
+      "projectFilePath": "src/DocumentProcessor.Web/DocumentProcessor.Web.csproj",
+      "dependencies": []
+    }
+  ]
+}
